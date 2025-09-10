@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     float timer = 0;
-    float shootTime = 0.7f;
-    enum Action { Shoot, Dodge, Reload };
+    float shootTime = 3f;
+    enum Action { None, Shoot, Dodge, Reload };
 
-    Action action = Action.Dodge;
+    Action action = Action.None;
     bool dodgeRight = true;
 
     // Update is called once per frame
@@ -33,26 +33,32 @@ public class PlayerScript : MonoBehaviour
         {
             action = Action.Reload;
         }
-
+     
         // Action Timer
         timer += Time.deltaTime;
         if (timer > shootTime)
         {
             if (action == Action.Shoot)
             {
+                Debug.Log("is shooting");
             }
             if (action == Action.Reload)
             {
+                Debug.Log("is reloading");
             }
             if (action == Action.Dodge)
             {
                 if (dodgeRight)
                 {
+                    Debug.Log("is dodging right");
                 }
                 else
                 {
+                    Debug.Log("is dodging left");
                 }
             }
+            timer = 0;
+            action = Action.None;
         }
     }
 }
