@@ -40,19 +40,23 @@ public class PlayerScript : MonoBehaviour
         {
             if (action == Action.Shoot)
             {
+                Debug.Log("is shooting");
             }
             if (action == Action.Reload)
             {
+                Debug.Log("is reloading");
             }
             if (action == Action.Dodge)
             {
                 if (dodgeRight)
                 {
+                    Debug.Log("is dodging");
                 }
                 else
                 {
                 }
             }
+
         }
     }
 }
