@@ -98,7 +98,6 @@ public class PlayerScript : MonoBehaviour
             }
         }
 
-        // Tie case
         //If nothing above happens, it is a tie cause no one dies!!!
         Debug.Log("It was a Tie!");
     }
