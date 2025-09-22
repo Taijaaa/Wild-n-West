@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
     public enum Action { None, Shoot, Dodge, Reload }
 
     public float roundTime = 3f;
+    //*****************************
+    bool isTie = false;
+    //*****************************
     private float timer;
     private bool roundActive = false;
 
@@ -15,6 +19,7 @@ public class PlayerScript : MonoBehaviour
     public EnemyScript enemy;
 
     private Coroutine roundCoroutine;
+    public GameObject tieText;
 
     void Start()
     {
@@ -44,10 +49,19 @@ public class PlayerScript : MonoBehaviour
                 playerAction = Action.Reload;
             }
         }
+
+        //*****************************
+        if (Input.GetKeyDown(KeyCode.S) && isTie)
+        {
+            SceneManager.LoadScene("Game Scene");
+        }
+        //*****************************
     }
 
     void StartNewRound()
     {
+        isTie = false;
+        tieText.SetActive(false);
         // Stop any old coroutine
         if (roundCoroutine != null)
         {
@@ -100,5 +114,11 @@ public class PlayerScript : MonoBehaviour
 
         //If nothing above happens, it is a tie cause no one dies!!!
         Debug.Log("It was a Tie!");
+
+        //*****************************
+        isTie = true;
+        tieText.SetActive(true);
+        //*****************************
+
     }
 }
