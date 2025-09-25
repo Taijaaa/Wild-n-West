@@ -1,0 +1,90 @@
+**Wild n West GDD**
+
+ 
+
+**DEVELOPMENT MILESTONES:**
+
+\-Main mechanics (Shoot, Reload, Block) implemented in game.
+
+\-Assets found and added
+
+\-Player Script made.
+
+\-Info sheet added.
+
+\-Restart function added
+
+**MAIN FEATURES:**
+
+**Genre**\- Action/Strategy 
+
+**Story**\- A stand off in the wild west\! Immerse yourself in this world by becoming a cowboy who finds himself in an infinite duel to the death.
+
+**Controls**\- 
+
+S \= Start/Replay
+
+Shoot \= Up Arrow
+
+Dodge \= Right/Left Arrow
+
+Reload \= Down Arrow
+
+**Visual Style**\- A 3D game centered around the wild west period.
+
+**Audio Style**\- No audio is implemented in this prototype
+
+**Interesting Mechanic**\- Simplistic mechanic that anyone can grasp after one game, player has a choice of 3 actions and can only commit one a turn (Shoot, Reload, Block). (Expanded on mechanic later in doc)
+
+**Unique Selling Point**\- Anyone, any age, casual or competitive can pick up our game and immediately get into the action. No learning curves or hard to learn/master mechanics, just pure chaos. Players can immediately get the hang of faking out opponents, making predictions and turn into the cowboy they always dreamed of being.
+
+**Player Experience Goal**\- Tension, Excitement, Mind Games.
+
+**Design Pillars-** 
+
+**Engine**\- Unity
+
+**Future Expansion Ideas**\-
+
+1. Implement cinematics  
+2. Create/import animations  
+3. Implement audio  
+4. Highscore?  
+5. Multiplayer
+
+ 
+
+* **Define the desired game mechanic or feature**. What are you making?
+
+We are making a turn-based action, strategy game with a simple combat loop that includes resource management and prediction. Players have a number of three actions they can choose from a turn (Reload, Shoot, Block). Players must reload to gain ammo, Use the ammo to shoot and block to protect them selves from enemy bullets. This mechanic is all about predicting and countering your opponents’ choices.
+
+ 
+
+ 
+
+* **Outline an objective statement for the design**. What question are you trying to answer with your prototype? Why?
+
+Our groups design objective us to test whether a simple 3 action system (shoot, reload, block) can be engaging and create moments of psychological tension similar to a high stakes duel. Our group wants to see if our players begin anticipating opponents choices and making calculated decisions instead of just simply reacting. Through this prototype we can learn  if our foundation supports the competitive, high stakes atmosphere our game is aiming to achieve. With our prototype we want to determine whether these simple mechanics naturally generate these feelings.
+
+ 
+
+* **Detail design rationale**. What kind of experience do you envision? How is it innovative or experimental?
+
+Our design aims to immerse players into the wild west and make them feel like they are in a high-stakes standoff. By limiting actions to such simple inputs, it makes our game easy to learn while leaving room for a competitive and engaging atmosphere. Exploring how much tension can emerge out of such minimal design is our innovative aspect. Instead of layering confusing and complex mechanics for new players we test whether our core loop itself is capable of delivering a competitive social experience in a digital prototype.
+
+Target platform and Audience:
+
+\-Wild n West is made for anyone and everyone, we want to keep the game rules and requirements light so everyone can have a chance at exceeding at our game. We keep out game as family friendly as we can using a weapon.
+
+**Asset Citations-** 
+
+Gun Revolver: [https://assetstore.unity.com/packages/3d/props/guns/revolver-gun-low-poly-221659](https://assetstore.unity.com/packages/3d/props/guns/revolver-gun-low-poly-221659)
+
+Character Model: [https://assetstore.unity.com/packages/3d/characters/humanoids/lowpoly-cowboy-rio-v1-1-288965](https://assetstore.unity.com/packages/3d/characters/humanoids/lowpoly-cowboy-rio-v1-1-288965)
+
+Wild West Town: [https://assetstore.unity.com/packages/3d/environments/historic/low-poly-wild-west-village-312360](https://assetstore.unity.com/packages/3d/environments/historic/low-poly-wild-west-village-312360)
+
+ 
+
+ 
+
